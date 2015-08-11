@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Quiz_5</title>
-			<script src="application.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Family Site</title>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/jquery.mobile-1.4.5.js"></script>
+		<script src="js/application.js"></script>
 	</head>
-	<body onload="javascript:printText ();">	
-		<div>
-			"Hear are the results of all number from 0 to 1000 that is eveningly divisible by 9 and 17"
+	<body>	
+		<div data-role="page" id="homepage">
+			<div data-role="header">
+				<h1>This is my title</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#homepage">Go to homepage page</a></li>						<li><a href="#secondPage">Go to second page</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1>This is my body</h1>
+				<a href="#secondPage">Go to second page</a>
+			</div>
+			<div data-role="footer">
+				<h1>This is my footer</h1>
+			</div>
 		</div>
-		<div id="output"> 
+		<div data-role="page" id="secondPage">
+			<div data-role="header">
+				<h1>This is my secondtitle</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#homepage">Go to homepage page</a></li>						<li><a href="#secondPage">Go to second page</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1>This is my secondbody</h1>
+				<a href="#homepage">Go to homepage page</a>			</div>
+			<div data-role="footer">
+				<h1>This is my secondfooter</h1>
+			</div>
+		</div>
 	</body>
-</html>
+</html> 
